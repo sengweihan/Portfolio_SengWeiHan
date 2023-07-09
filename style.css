@@ -75,7 +75,7 @@ main {
   display: flex;
   justify-content: space-between;
 
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   color: white;
   padding: 150px 10%;
   position: relative;
@@ -87,8 +87,8 @@ main {
   padding-top: 150px;
 }
 .home-section-image {
-  display: flex;
-  flex-direction: column;
+  margin-top: -120px;
+  background-size: cover;
 }
 .name {
   letter-spacing: 0.5rem;
