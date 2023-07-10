@@ -1,5 +1,4 @@
 /* CSS RESET  */
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 * {
   padding: 0;
@@ -7,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+  color: white;
+}
 body {
   /* font-family: "Press Start 2P", cursive; */
   font-family: monospace;
@@ -46,7 +49,6 @@ body {
 
 .header_nav .header_ul li a {
   text-decoration: none;
-
   color: white;
   font-size: 1.2rem;
   font-style: bolder;
@@ -65,28 +67,32 @@ a:focus {
   transition: 500ms ease;
 }
 
+.active {
+  -webkit-text-fill-color: transparent;
+  transition: 500ms ease;
+}
+
 /* MAIN SECTION */
 
 main {
-  height: 100vh;
+  min-height: 100vh;
 }
 
-#home-section {
+.home-section {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   color: white;
-  padding: 150px 8%;
+  padding: 130px 100px 150px 120px;
   position: relative;
 }
 
 .home-section-image {
-  margin-top: -170px;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
+  margin-top: -30px;
 }
 
 .home-section-intro h1 {
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.3rem;
   font-size: 3.1rem;
   padding-left: 30px;
   background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
@@ -95,19 +101,52 @@ main {
 }
 
 .home-section-intro h2 {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   letter-spacing: 0.15rem;
 }
 
 .home-section-intro p {
   font-size: 1.2rem;
+  line-height: 1.8rem;
 }
+
 .home-section-intro {
   max-width: 650px;
 }
 
+.h2-bottom {
+  padding-bottom: 10px;
+}
 .comp-science {
   background: linear-gradient(to right, #2193b0, #6dd5ed);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.about-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-descriptions {
+  max-width: 750px;
+  line-height: 1.6rem;
+}
+
+.about-descriptions p {
+  color: darkgrey;
+}
+
+.about-descriptions h1 {
+  font-size: 1.8rem;
+  text-decoration: underline;
+}
+
+.seng-profile {
+  border-radius: 40px;
+}
+
+.education-info {
+  display: flex;
+  justify-content: space-between;
 }
