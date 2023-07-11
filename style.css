@@ -165,7 +165,7 @@ body {
   text-align: center;
   font-size: 2rem;
   letter-spacing: 0.5rem;
-  padding-top: 20px;
+  padding: 40px 0;
 }
 
 .seng-project {
@@ -174,9 +174,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
-.seng-project-1 {
-  border-radius: 1.3rem;
-}
 
 .seng-project-box {
   width: 400px;
@@ -184,8 +181,9 @@ body {
   background-color: gray;
   margin: 30px auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+
   position: relative;
   border-radius: 20px;
 }
@@ -208,4 +206,10 @@ body {
   width: 103%;
   top: 0;
   left: 0;
+}
+
+.visualisation-image {
+  max-width: 300px;
+  height: auto;
+  border-top: 20px;
 }
