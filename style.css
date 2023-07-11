@@ -177,19 +177,19 @@ body {
 
 .seng-project-box {
   width: 400px;
-  height: 500px;
-  background-color: gray;
+  height: 600px;
+  background-color: black;
   margin: 30px auto;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
 
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.404);
   position: relative;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 
 .seng-project-box::after {
-  content: "123";
+  content: "";
   position: absolute;
   height: 90%;
   width: 90%;
@@ -209,7 +209,26 @@ body {
 }
 
 .visualisation-image {
-  max-width: 300px;
-  height: auto;
-  border-top: 20px;
+  width: 100%;
+  height: 40%;
+  border-radius: 25px 25px 0 0;
+  background-repeat: no-repeat;
+}
+
+.data-visualization {
+  line-height: 2rem;
+  padding: 20px 5px 3px 5px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.suicide-cases {
+  color: rgba(255, 0, 0, 0.781);
+  font-size: 1.7rem;
+}
+.seng-project-box p {
+  text-align: center;
+  line-height: 1.3rem;
+  color: darkgray;
+  padding-left: 10px;
+  padding-right: 5px;
 }
