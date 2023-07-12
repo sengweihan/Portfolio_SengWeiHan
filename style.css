@@ -179,7 +179,6 @@ body {
   background-color: black;
   margin: 30px auto;
   display: flex;
-
   flex-direction: column;
   border: 1px solid rgba(255, 255, 255, 0.404);
   position: relative;
@@ -213,7 +212,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.data-visualization {
+.seng-project-h3 {
   line-height: 2rem;
   padding: 20px 5px 3px 5px;
   text-align: center;
