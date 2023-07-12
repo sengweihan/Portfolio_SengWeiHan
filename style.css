@@ -180,6 +180,7 @@ body {
   margin: 30px auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
   border: 1px solid rgba(255, 255, 255, 0.404);
   position: relative;
   border-radius: 25px;
@@ -213,6 +214,7 @@ body {
 }
 
 .seng-project-h3 {
+  color: rgba(255, 255, 255, 0.927);
   line-height: 2rem;
   padding: 20px 5px 3px 5px;
   text-align: center;
@@ -228,4 +230,20 @@ body {
   color: darkgray;
   padding-left: 10px;
   padding-right: 5px;
+}
+
+.project-btn {
+  height: 50px;
+  position: absolute;
+  width: 200px;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: center;
+  margin: 520px;
+  background-color: rgba(10, 230, 208, 0.945);
+  font-family: monospace;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  color: black;
 }
