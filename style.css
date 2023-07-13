@@ -82,12 +82,39 @@ body {
   color: white;
   padding: 130px 100px 150px 120px;
   position: relative;
-
   border-bottom: 1px solid rgba(255, 255, 255, 0.251);
+}
+.download-resume-btn {
+  color: white;
+  margin: 10px 150px 0;
+  font-size: 1.2rem;
+  max-width: 230px;
+  height: 50px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(30, 143, 255, 0.753);
+  border-radius: 5px;
+  box-shadow: rgba(30, 143, 255, 0.753) 0px 0px 15px 0px;
+}
+
+.download-resume-btn:hover {
+  transform: scale(1.2);
+}
+
+.download-icon {
+  padding-left: 10px;
+  padding-top: 8px;
+  font-size: 25px;
 }
 
 .home-section-image {
   margin-top: -30px;
+}
+
+.home-section-intro {
+  max-width: 650px;
 }
 
 .home-section-intro h1 {
@@ -109,13 +136,10 @@ body {
   line-height: 1.8rem;
 }
 
-.home-section-intro {
-  max-width: 650px;
-}
-
 .h2-bottom {
   padding-bottom: 10px;
 }
+
 .comp-science {
   background: linear-gradient(to right, #2193b0, #6dd5ed);
   -webkit-background-clip: text;
@@ -171,6 +195,8 @@ body {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.251);
 }
 
 .seng-project-box {
@@ -234,17 +260,42 @@ body {
 
 .project-btn {
   height: 50px;
+  text-decoration: none;
   position: absolute;
   width: 200px;
-  border-radius: 10px;
-  display: inline-block;
-  text-align: center;
-  margin: 520px;
+  border-radius: 8px;
+  margin: 510px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgba(10, 230, 208, 0.945);
-  font-family: monospace;
-  cursor: pointer;
+  font-family: sans-serif;
   font-weight: bolder;
-  font-size: 1.2rem;
   color: black;
   border: 1.5px solid white;
+  box-shadow: rgba(10, 230, 208, 0.945) 0px 0px 20px 0px;
+}
+
+.project-btn:hover {
+  transform: scale(1.2);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-element {
+  margin-top: 10px;
+  padding: 5px 20px;
+}
+
+.logo ion-icon {
+  width: 25px;
+  height: 25px;
+  color: white;
+}
+
+.copy-right {
+  padding: 13px 20px;
+  font-size: 1.2rem;
 }
