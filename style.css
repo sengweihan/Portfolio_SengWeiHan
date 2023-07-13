@@ -273,7 +273,7 @@ body {
   font-weight: bolder;
   color: black;
   border: 1.5px solid white;
-  box-shadow: rgba(10, 230, 208, 0.945) 0px 0px 20px 0px;
+  box-shadow: rgba(10, 230, 208, 0.945) 0px 0px 15px 0px;
 }
 
 .project-btn:hover {
