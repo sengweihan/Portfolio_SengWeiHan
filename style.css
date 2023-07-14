@@ -22,13 +22,13 @@ body {
 
 .header {
   position: fixed;
-  background-color: black;
+  background: black;
   width: 100%;
   z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   top: 0;
   left: 0;
   border-bottom: 1px ridge rgba(255, 255, 255, 0.251);
@@ -43,10 +43,9 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.header_nav .header_ul li {
+.header_nav .header_ul {
+  display: flex;
   list-style-type: none;
-  padding: 30px 30px;
-  display: inline-block;
 }
 
 .header_nav .header_ul li a {
@@ -60,12 +59,14 @@ body {
     rgba(255, 0, 180, 1),
     rgba(0, 100, 200, 1)
   );
+  padding: 20px 30px;
   -webkit-background-clip: text;
 }
 
 .header_nav .header_ul li a:hover,
 .header_nav .header_ul li a:focus {
   -webkit-text-fill-color: transparent;
+
   transition: 500ms ease;
 }
 
@@ -80,7 +81,7 @@ body {
   justify-content: space-around;
   align-items: center;
   color: white;
-  padding: 130px 100px 150px 120px;
+  padding: 130px 100px 60px 120px;
   position: relative;
   border-bottom: 1px solid rgba(255, 255, 255, 0.251);
 }
@@ -150,7 +151,7 @@ body {
   display: flex;
   justify-content: space-around;
   border-bottom: 1px solid rgba(255, 255, 255, 0.251);
-  padding: 30px 0;
+  padding: 100px 0px 40px 0px;
 }
 
 .about-descriptions {
@@ -183,6 +184,9 @@ body {
   align-items: center;
 }
 
+.my-project {
+  padding: 60px 0px 0px 0px;
+}
 .my-project h1 {
   text-align: center;
   font-size: 2rem;
@@ -264,7 +268,7 @@ body {
   position: absolute;
   width: 200px;
   border-radius: 8px;
-  margin: 510px;
+  top: 510px;
   display: flex;
   align-items: center;
   justify-content: center;
