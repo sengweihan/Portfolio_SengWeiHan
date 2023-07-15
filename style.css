@@ -59,7 +59,7 @@ body {
     rgba(255, 0, 180, 1),
     rgba(0, 100, 200, 1)
   );
-  padding: 20px 30px;
+  padding: 20px 40px;
   -webkit-background-clip: text;
 }
 
@@ -87,7 +87,7 @@ body {
 }
 .download-resume-btn {
   color: white;
-  margin: 10px 150px 0;
+  margin: 20px 150px 0;
   font-size: 1.2rem;
   max-width: 230px;
   height: 50px;
@@ -115,10 +115,19 @@ body {
 }
 
 .home-section-intro {
+  max-height: fit-content;
+  width: 100%;
   max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  padding: 20px;
 }
 
 .home-section-intro h1 {
+  white-space: nowrap;
   letter-spacing: 0.3rem;
   font-size: 3.1rem;
   padding-left: 30px;
@@ -130,6 +139,7 @@ body {
 .home-section-intro h2 {
   font-size: 2.4rem;
   letter-spacing: 0.15rem;
+  white-space: nowrap;
 }
 
 .home-section-intro p {
@@ -148,7 +158,9 @@ body {
 }
 
 .about-section {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   border-bottom: 1px solid rgba(255, 255, 255, 0.251);
   padding: 100px 0px 40px 0px;
@@ -170,18 +182,13 @@ body {
 
 .seng-profile {
   border-radius: 40px;
+
   margin-left: 50px;
 }
 
 .education-info {
   display: flex;
   justify-content: space-between;
-}
-
-.hero-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .my-project {
@@ -200,7 +207,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
   padding-bottom: 15px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.251);
 }
 
 .seng-project-box {
@@ -285,6 +291,8 @@ body {
 }
 
 .footer {
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.251);
   display: flex;
   justify-content: space-between;
 }
@@ -302,4 +310,91 @@ body {
 .copy-right {
   padding: 13px 20px;
   font-size: 1.2rem;
+}
+
+.my-name {
+  white-space: nowrap;
+}
+
+@media (max-width: 1220px) {
+  .home-section-intro {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-descriptions {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 1003px) {
+  .home-section-intro {
+    margin-left: 350px;
+  }
+}
+
+@media (max-width: 854px) {
+  .home-section-intro p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 854px) {
+  .home-section-intro h2 {
+    font-size: 1.5rem;
+  }
+  .home-section-intro p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 660px) {
+  .home-section-intro h1 {
+    font-size: 2.5rem;
+  }
+  .home-section-intro p {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 630px) {
+  .home-section-intro h1 {
+    font-size: 2rem;
+  }
+  .home-section-intro p {
+    font-size: 0.3rem;
+  }
+}
+
+@media (max-width: 637px) {
+  .home-section-intro h1 {
+    font-size: 1.8rem;
+  }
+  .home-section-intro h2 {
+    font-size: 1.4rem;
+  }
+  .home-section-intro p {
+    font-size: 0.15rem;
+  }
+}
+
+@media (max-width: 590px) {
+  .home-section-intro h1 {
+    font-size: 1.5rem;
+  }
+  .home-section-intro h2 {
+    font-size: 1.2rem;
+  }
+  .home-section-intro p {
+    font-size: 0.15rem;
+  }
+  .home-section-intro a {
+    margin-left: 30px;
+  }
 }
